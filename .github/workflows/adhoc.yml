@@ -58,6 +58,6 @@ jobs:
         if: always()
         with:
           publish_branch: allure
-          github_token: ${{ secrets.MILANA_ALLURE }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./milana-rendered-allure
           keep_files: true
