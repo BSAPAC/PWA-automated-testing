@@ -1,0 +1,16 @@
+node_modules/
+/test-results/
+/playwright-report/
+/blob-report/
+/playwright/.cache/
+playground
+test-results
+allure-results
+allure-dummy.txt
+yarn-error.log
+allure-report
+package-lock.json
+allure-report
+milana-rendered-allure
+tmp
+test-template.env.json
