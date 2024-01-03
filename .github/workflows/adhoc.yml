@@ -1,10 +1,15 @@
 name: PWA Automation Test
 
 on:
-  push:
-    branches:
-      - master
+  schedule:
+    - cron: '0 0 * * 1' # Runs every Monday at midnight UTC
+
   workflow_dispatch:
+    inputs:
+      command:
+        description: 'Test Command to run'
+        required: true
+        default: 'yarn test-all-suites'
 
 jobs:
   build:
@@ -28,7 +33,7 @@ jobs:
         run: npx playwright install
 
       - name: Execute Automation Test
-        run: yarn clean-test-dev
+        run: ${{ github.event.inputs.command }}
         env:
           CASDOOR: ${{ secrets.CASDOOR }}
           BASE_URL: ${{ secrets.BASE_URL }}
