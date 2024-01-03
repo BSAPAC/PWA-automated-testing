@@ -42,9 +42,22 @@ jobs:
           EMPLOYEE_USERNAME: ${{ secrets.EMPLOYEE_USERNAME }}
           EMPLOYEE_PASSWORD: ${{ secrets.EMPLOYEE_PASSWORD }}
 
-      - uses: actions/upload-artifact@v3
+      - name: Render allure report
+        run: yarn allure-render
+        if: always()
+
+      - name: Upload test report as artifact. To troubleshoot failures, extract .zip and investigate.
+        uses: actions/upload-artifact@v3
         if: always()
         with:
           name: test-results
           path: test-results/
-          retention-days: 30
+
+      - name: 'Publish test results'
+        uses: peaceiris/actions-gh-pages@v3.9.3
+        if: always()
+        with:
+          publish_branch: allure
+          github_token: ${{ secrets.MILANA_ALLURE }}
+          publish_dir: milana-rendered-allure/
+          keep_files: true
