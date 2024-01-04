@@ -44,4 +44,4 @@
 1. Test run automatically by the Github Runner
 2. We can run workflow dynamically by specify the test command and run it from Github Action UI
 3. After test finished, the Allure report will automatically real-time deploy using Github Page on:
-   https://bsapac.github.io/PWA-automated-testing/
+   https://bsapac.github.io/PWA-automated-testing-framework/
