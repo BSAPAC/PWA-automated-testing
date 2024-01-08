@@ -1,0 +1,4 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"failed","Mon Jan 08 02:33:12 UTC 2024","Mon Jan 08 02:33:34 UTC 2024","22118","[UI Testing]: iPhone 14 | Chrome","I can logout to the application and back to the home page","","","","I can logout to the application and back to the home page",""
+"failed","Mon Jan 08 02:32:49 UTC 2024","Mon Jan 08 02:33:12 UTC 2024","22370","[UI Testing]: iPhone 14 | Chrome","I can login to the dashboard page to see the content","","","","I can login to the dashboard page to see the content",""
+"failed","Mon Jan 08 02:33:34 UTC 2024","Mon Jan 08 02:33:56 UTC 2024","22143","[UI Testing]: iPhone 14 | Chrome","I can see the validation on the Login page","","","","I can see the validation on the Login page",""
