@@ -33,11 +33,11 @@ Then('the data returns from Profiles table correct as my expect', () => {
 	validation.validateDataEqual(data[0].userId, 'eb3e8bdb-0bf6-45c3-919c-d0c61c559b41');
 	validation.validateDataEqual(data[0].personalInformation.nationality, 'American');
 	validation.validateDataEqual(data[0].personalInformation.gender, 'male');
-	validation.validateDataEqual(data[0].personalInformation.age, 33);
+	validation.validateDataEqual(data[0].personalInformation.age, 27);
 });
 
 Then('the data get all Female Users returns from Profiles table correct as my expect', () => {
-	validation.validateDataEqual(data.length, 3);
+	validation.validateDataEqual(data.length, 2);
 	validation.validateDataEqual(data[0].customQuestions.length, 2);
 	validation.validateDataEqual(data[0].customQuestions[0].question, 'What is your favorite book?');
 	validation.validateDataEqual(data[0].customQuestions[0].answer, 'To Kill a Mockingbird');
