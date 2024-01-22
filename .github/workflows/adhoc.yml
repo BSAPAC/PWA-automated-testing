@@ -33,7 +33,7 @@ jobs:
         run: npx playwright install
 
       - name: Execute Automation Test
-        run: ${{ github.event.inputs.command }}
+        run: ${{ github.event.inputs.command || 'yarn test-all-suites'}}
         env:
           CASDOOR: ${{ secrets.CASDOOR }}
           BASE_URL: ${{ secrets.BASE_URL }}
