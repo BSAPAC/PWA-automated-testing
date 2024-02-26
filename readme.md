@@ -5,10 +5,10 @@ Tools used are
 	•	Open source (Developed & backed by Microsoft)
 	•	Reliable end to end testing for the modern web apps
 	•	Any Browser, Any platform
-2.	Cucumber
+3.	Cucumber
 	•	Cucumber enables you to write test cases that anyone can 
 		easily understand regardless of their technical knowledge.
-3.	Allure Reporting
+4.	Allure Reporting
 	•	Allure Report is a flexible multi-language test report tool 	
 		to show you a detailed representation of what has been tested and extract maximum from the everyday execution of tests
 		Key driver for selecting testing frame tools is “No subscriptions/payments - Open Source”
