@@ -1,17 +1,17 @@
 # Context
 Automated testing framework to facilitate Behavior driven development (BDD) methodology for application development.
 Tools used are
-1.	Playwright 
-	•	Open source (Developed & backed by Microsoft)
-	•	Reliable end to end testing for the modern web apps
-	•	Any Browser, Any platform
-3.	Cucumber
-	•	Cucumber enables you to write test cases that anyone can 
-		easily understand regardless of their technical knowledge.
-4.	Allure Reporting
-	•	Allure Report is a flexible multi-language test report tool 	
-		to show you a detailed representation of what has been tested and extract maximum from the everyday execution of tests
-		Key driver for selecting testing frame tools is “No subscriptions/payments - Open Source”
+1. Playwright 
+- Open source (Developed & backed by Microsoft)
+- Reliable end to end testing for the modern web apps
+- Any Browser, Any platform
+2. Cucumber
+- Cucumber enables you to write test cases that anyone can easily understand regardless of their technical knowledge.
+3. Allure Reporting
+- Allure Report is a flexible multi-language test report tool to show you a detailed representation of what has been tested
+  and extract maximum from the everyday execution of tests
+
+Key driver for selecting testing frame tools is “No subscriptions/payments - Open Source”.
 
 # Automation testing UI + API + DB with Cucumber Playwright (Javascript)
 
