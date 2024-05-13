@@ -1,4 +1,4 @@
 "Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
-"failed","Mon May 06 00:10:55 UTC 2024","Mon May 06 00:11:19 UTC 2024","24058","[UI Testing]: iPhone 14 | Chrome","I can see the validation on the Login page","","","","I can see the validation on the Login page",""
-"failed","Mon May 06 00:10:05 UTC 2024","Mon May 06 00:10:31 UTC 2024","26588","[UI Testing]: iPhone 14 | Chrome","I can login to the dashboard page to see the content","","","","I can login to the dashboard page to see the content",""
-"failed","Mon May 06 00:10:31 UTC 2024","Mon May 06 00:10:55 UTC 2024","24103","[UI Testing]: iPhone 14 | Chrome","I can logout to the application and back to the home page","","","","I can logout to the application and back to the home page",""
+"failed","Mon May 13 00:11:13 UTC 2024","Mon May 13 00:11:37 UTC 2024","24254","[UI Testing]: iPhone 14 | Chrome","I can logout to the application and back to the home page","","","","I can logout to the application and back to the home page",""
+"failed","Mon May 13 00:10:40 UTC 2024","Mon May 13 00:11:13 UTC 2024","32733","[UI Testing]: iPhone 14 | Chrome","I can login to the dashboard page to see the content","","","","I can login to the dashboard page to see the content",""
+"failed","Mon May 13 00:11:37 UTC 2024","Mon May 13 00:12:01 UTC 2024","24004","[UI Testing]: iPhone 14 | Chrome","I can see the validation on the Login page","","","","I can see the validation on the Login page",""
