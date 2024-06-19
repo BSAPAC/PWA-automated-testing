@@ -5,10 +5,13 @@ const HomePage = require('../pages/modules/home-page');
 const LoginPage = require('../pages/modules/login');
 const DashboardPage = require('../pages/modules/dashboard');
 const { Env, LoginCredential } = require('../constants/env');
+const Navigator = require('../pages/components/navigator');
 
-Given('I navigate to the home page', async () => {
+Given('I navigate to the home page then accept cookies', async () => {
 	const homePage = new HomePage(pageFixture.page);
 	await homePage.goto();
+	await homePage.validateCookieConsentShow();
+	await homePage.clickBtnAcceptCookie();
 });
 
 When('I go to the Sign in page by click button Sign in on Home page', async () => {
@@ -40,17 +43,19 @@ Then('I login with a valid credential', async () => {
 });
 
 Then('I can access the dashboard page to see the content', async () => {
-	const dashboardPage = new DashboardPage(pageFixture.page);
-	await dashboardPage.validateShowSaleOpportunity();
+	const navigator = new Navigator(pageFixture.page);
+	await navigator.validatePageTitleIs('Profile Manager');
 });
 
 Then('I logout the application', async () => {
-	const dashboardPage = new DashboardPage(pageFixture.page);
-	await dashboardPage.clickButtonLogout();
+	const navigator = new Navigator(pageFixture.page);
+	await navigator.clickHamburgerIcon();
+	await navigator.validateRightMenuShow();
+	await navigator.clickButtonLogout();
 });
 
 Then('I am landing on the homepage', async () => {
 	const homePage = new HomePage(pageFixture.page);
-	await homePage.validatePageHaveURL(`https://${Env[testFixture.env].baseURL}`);
+	await homePage.validatePageHaveURL(`https://${Env[testFixture.env].baseURL}/landing`);
 	await homePage.validateOnHomePage();
 });

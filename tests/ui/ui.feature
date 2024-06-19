@@ -2,7 +2,7 @@ Feature: UI Testing
 
     @UI
     Scenario: I can login to the dashboard page to see the content
-        Given I navigate to the home page
+        Given I navigate to the home page then accept cookies
         When I go to the Sign in page by click button Sign in on Home page
         Then I can see the Login Form on the Sign in Page
         And I login with a valid credential
@@ -10,7 +10,7 @@ Feature: UI Testing
 
     @UI
     Scenario: I can logout to the application and back to the home page
-        Given I navigate to the home page
+        Given I navigate to the home page then accept cookies
         When I go to the Sign in page by click button Sign in on Home page
         Then I can see the Login Form on the Sign in Page
         And I login with a valid credential
@@ -20,7 +20,7 @@ Feature: UI Testing
 
     @UI
     Scenario: I can see the validation on the Login page
-        Given I navigate to the home page
+        Given I navigate to the home page then accept cookies
         When I go to the Sign in page by click button Sign in on Home page
         Then I can see the Login Form on the Sign in Page
         And I click the Sign in button on the Sign in page

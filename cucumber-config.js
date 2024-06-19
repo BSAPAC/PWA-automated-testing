@@ -18,7 +18,7 @@ const commonConfig = {
 	parallel: 1,
 	worldParameters: {
 		browser: 'chrome',
-		headless: true,
+		headless: false,
 	},
 };
 

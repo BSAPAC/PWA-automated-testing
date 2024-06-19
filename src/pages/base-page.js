@@ -35,6 +35,9 @@ class BasePage {
 	async validateElementHaveText(locator, text) {
 		await expect(await this.getElement(locator)).toHaveText(text);
 	}
+	async validateElementHaveAttributeWithValue(locator, attributeType, attributeValue) {
+		await expect(await this.getElement(locator)).toHaveAttribute(attributeType, attributeValue);
+	}
 }
 
 module.exports = BasePage;
