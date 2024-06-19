@@ -30,6 +30,14 @@ const commonDevConfig = {
 	},
 };
 
+const commonTestConfig = {
+	...commonConfig,
+	worldParameters: {
+		...commonConfig.worldParameters,
+		env: 'test',
+	},
+};
+
 const commonProdConfig = {
 	...commonConfig,
 	worldParameters: {
@@ -81,6 +89,44 @@ module.exports = {
 		...commonDevConfig,
 		worldParameters: {
 			...commonDevConfig.worldParameters,
+			device: 'Galaxy S9+',
+		},
+	},
+	test: {
+		...commonTestConfig,
+	},
+	'test:firefox': {
+		...commonTestConfig,
+		worldParameters: {
+			...commonTestConfig.worldParameters,
+			browser: 'firefox',
+		},
+	},
+	'test:iPhone14': {
+		...commonTestConfig,
+		worldParameters: {
+			...commonTestConfig.worldParameters,
+			device: 'iPhone 14',
+		},
+	},
+	'test:iPadPro11': {
+		...commonTestConfig,
+		worldParameters: {
+			...commonTestConfig.worldParameters,
+			device: 'iPad Pro 11',
+		},
+	},
+	'test:Pixel7': {
+		...commonTestConfig,
+		worldParameters: {
+			...commonTestConfig.worldParameters,
+			device: 'Pixel 7',
+		},
+	},
+	'test:GalaxyS9+': {
+		...commonTestConfig,
+		worldParameters: {
+			...commonTestConfig.worldParameters,
 			device: 'Galaxy S9+',
 		},
 	},

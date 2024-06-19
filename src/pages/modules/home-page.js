@@ -5,8 +5,10 @@ class HomePage extends BasePage {
 		super(page);
 	}
 	element = {
-		loginBtn: "//button[text()='Sign In']",
-		signupBtn: "//button[text()='Sign Up']",
+		loginBtn: "//button[text()='SIGN IN']",
+		signupBtn: "//button[text()='SIGN UP Free']",
+		btnAcceptCookie: "button[aria-label='Accept cookies']",
+		cookieConsentBanner: "div.alert:has(button[aria-label='Accept cookies'])",
 	};
 
 	async clickSignInBtn() {
@@ -18,6 +20,12 @@ class HomePage extends BasePage {
 	async validateOnHomePage() {
 		await this.validateElementVisible(this.element.loginBtn);
 		await this.validateElementVisible(this.element.signupBtn);
+	}
+	async validateCookieConsentShow() {
+		await this.validateElementVisible(this.element.cookieConsentBanner);
+	}
+	async clickBtnAcceptCookie() {
+		await this.clickElement(this.element.btnAcceptCookie);
 	}
 }
 

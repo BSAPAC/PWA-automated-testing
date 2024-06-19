@@ -33,6 +33,7 @@
 		"test-db-dev": "cucumber-js -p dev -c cucumber-config.js tests/**/db.feature",
 		"test-api-dev": "cucumber-js -p dev -c cucumber-config.js tests/**/api.feature",
 		"test-ui-dev:chrome": "cucumber-js -p dev -c cucumber-config.js tests/**/ui.feature",
+		"test-ui-test:chrome": "cucumber-js -p test -c cucumber-config.js tests/**/ui.feature",
 		"test-ui-dev:firefox": "cucumber-js -p dev:firefox -c cucumber-config.js tests/**/ui.feature",
 		"test-ui-dev:iPhone14": "cucumber-js -p dev:iPhone14 -c cucumber-config.js tests/**/ui.feature",
 		"test-ui-dev:iPadPro11": "cucumber-js -p dev:iPadPro11 -c cucumber-config.js tests/**/ui.feature",

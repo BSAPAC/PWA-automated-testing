@@ -5,13 +5,23 @@ class DashboardPage extends BasePage {
 		super(page);
 	}
 	element = {
-		leftMenuSaleOpportunity: "//span[text()='Sales Oppurtunity']",
-		logoutBtn: "//span[text()='Logout']",
+		horizonNav: (navType) => {
+			return `//button[@role='tab' and text()='${navType}']`;
+		},
 	};
 
-	async validateShowSaleOpportunity() {
-		await this.validateElementVisible(this.element.leftMenuSaleOpportunity);
+	async validateHorizonNavEnable(horizonNavType) {
+		await this.validateElementHaveAttributeWithValue(
+			this.element.horizonNav(horizonNavType),
+			'aria-selected',
+			'true',
+		);
 	}
+
+	async validateShowDefaultDashboardView() {
+		await this.validateHorizonNavEnable('Dashboard');
+	}
+
 	async clickButtonLogout() {
 		await this.clickElement(this.element.logoutBtn);
 	}
