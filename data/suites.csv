@@ -1,4 +1,4 @@
 "Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
-"failed","Mon Aug 05 00:11:57 UTC 2024","Mon Aug 05 00:12:22 UTC 2024","25195","[UI Testing]: iPhone 14 | Chrome","I can logout to the application and back to the home page","","","","I can logout to the application and back to the home page",""
-"failed","Mon Aug 05 00:11:30 UTC 2024","Mon Aug 05 00:11:57 UTC 2024","26873","[UI Testing]: iPhone 14 | Chrome","I can login to the dashboard page to see the content","","","","I can login to the dashboard page to see the content",""
-"failed","Mon Aug 05 00:12:22 UTC 2024","Mon Aug 05 00:12:47 UTC 2024","25222","[UI Testing]: iPhone 14 | Chrome","I can see the validation on the Login page","","","","I can see the validation on the Login page",""
+"failed","Mon Aug 12 00:12:08 UTC 2024","Mon Aug 12 00:12:33 UTC 2024","25225","[UI Testing]: iPhone 14 | Chrome","I can see the validation on the Login page","","","","I can see the validation on the Login page",""
+"failed","Mon Aug 12 00:11:43 UTC 2024","Mon Aug 12 00:12:08 UTC 2024","25127","[UI Testing]: iPhone 14 | Chrome","I can logout to the application and back to the home page","","","","I can logout to the application and back to the home page",""
+"failed","Mon Aug 12 00:11:18 UTC 2024","Mon Aug 12 00:11:43 UTC 2024","25326","[UI Testing]: iPhone 14 | Chrome","I can login to the dashboard page to see the content","","","","I can login to the dashboard page to see the content",""
